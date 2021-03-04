@@ -1,4 +1,4 @@
-.PHONY: install build start clean
+.PHONY: install build serve clean
 
 build:
 	yarn webpack
@@ -6,8 +6,8 @@ build:
 install:
 	yarn install
 
-start:
-	yarn webpack-dev-server --open
+serve:
+	yarn webpack serve
 
 clean:
 	rm -rf dist/
