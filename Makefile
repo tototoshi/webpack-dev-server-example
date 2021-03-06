@@ -1,14 +1,13 @@
 .PHONY: install build serve clean
 
 build:
-	yarn webpack
+	npx webpack
 
 install:
-	yarn install
+	npm install
 
 serve:
-	yarn webpack serve
+	npx webpack serve
 
 clean:
 	rm -rf dist/
-
